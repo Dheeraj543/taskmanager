@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Web page
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        
+        <div class="wrapper">
+            <div class="content">
+                <div class="row">
+                    <div class="text-center text-light bg-info col-md-12">
+                        <h1>TASK MANAGER </h1>
+                        <p>Add your Tasks and update it's Completion and Delete anytime</p>
+                        <div class="credits">
+                        <p>"Developed by Dheeraj kumar"</p>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="search">
+                    <div class="container">
+                        
+                        <form class="form-container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input type="text" class="search-todo form-control" placeholder="Search your Task here"/>
+                                </div>
+                                <div class="col-md-8 form-check checkbox">
+                                    <label>
+                                        <input type="checkbox" class="hidecompleted"/>Hide Completed
+                                    </label>
+                                </div>
+                            </div>
+                            
+                        </form>
+                
+                </div>
+                </div>
+            <div class="container">
+            <div class="row status-header">
+                <h5 class="status text-danger col-md-12 font-weight-bold"></h5>
+                </div>
+            <div class="todo-form">
+                <form>
+                    <div class="row">
+                    <div class="col-md-4">
+                        <input type="text" class="new-todo" placeholder="Write your task here" required="true"/>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="submit-todo">Add task</button>
+                    </div>
+                    </div>
+                    
+                    
+                </form>
+            </div>
+        </br>
+            <div class="rows">
+            <div class="todos col-md-12"></div>
+            </div>
+            </div>
+            </div>
+            
+            </div>
+    
+        </div>
+
+        
+
+
+
+
+
+
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBG59dHtkPjGtg4OQ6AprajY2VaSWjGueM",
+    authDomain: "webnotes-js.firebaseapp.com",
+    projectId: "webnotes-js",
+    storageBucket: "webnotes-js.appspot.com",
+    messagingSenderId: "1072286947552",
+    appId: "1:1072286947552:web:b4f51a1100e59e0bbed885",
+    measurementId: "G-C48CH6053S"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db=firebase.firestore();
+</script>
+<script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js"></script>
+
+<script src="jquery.js"></script>
+<script src="app.js"></script>
+    </body>
+</html>

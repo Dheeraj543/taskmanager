@@ -1,0 +1,81 @@
+.wrapper{
+    min-height: 100%;
+    position: relative;
+    background: radial-gradient(#fff,#ffd6d6);
+    padding: 10px 0;
+}
+.content{
+    padding-bottom: 100px;
+}
+.footer{
+    position: absolute;
+    bottom: 10px;
+    height: 60px;
+}
+body, html{
+height: 100%;
+}
+.search{
+    background-color: #DAE0E2;
+    height: 4em;
+}
+.checkbox{
+    margin-top: 0.5%;
+}
+.search div form{
+    padding-top: 1em;
+}
+.status-header{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.singleTodo{
+    margin-bottom: 1%;
+}
+.btncustom{
+    float: right;
+}
+.footer{
+    box-sizing: border-box;
+    bottom: 0em;
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px o;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #563434; 
+}
+.form-container{
+    background: #fff;
+    
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.new-todo{
+    background: #fff;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.credits{
+    font-size: 14px;
+    color: grey;
+    float: right;
+    right: 5em;
+}
